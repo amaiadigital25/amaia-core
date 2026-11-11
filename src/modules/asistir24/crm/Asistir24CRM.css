@@ -1,0 +1,716 @@
+.asistir24-crm {
+  width: 100%;
+  height: 100%;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  background: #07111f;
+  color: #e8f0f8;
+  font-family:
+    Inter,
+    ui-sans-serif,
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
+}
+
+/* =========================
+   TOPBAR
+   ========================= */
+
+.asistir24-crm__topbar {
+  min-height: 72px;
+  height: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 28px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  background: #0a1626;
+  flex-shrink: 0;
+}
+
+.asistir24-crm__brand {
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 0.18em;
+  color: #48a8ff;
+}
+
+.asistir24-crm__module {
+  margin-top: 3px;
+  font-size: 21px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.asistir24-crm__topbar-status {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  padding: 8px 13px;
+  border: 1px solid rgba(72, 168, 255, 0.2);
+  border-radius: 999px;
+  background: rgba(72, 168, 255, 0.07);
+  color: #a9c8e6;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.asistir24-crm__status-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #35d28a;
+  box-shadow: 0 0 10px rgba(53, 210, 138, 0.6);
+}
+
+/* =========================
+   BODY
+   ========================= */
+
+.asistir24-crm__body {
+  min-height: 0;
+  flex: 1;
+  display: flex;
+  overflow: hidden;
+}
+
+/* =========================
+   SIDEBAR
+   ========================= */
+
+.asistir24-crm__sidebar {
+  width: 235px;
+  min-width: 235px;
+  display: flex;
+  flex-direction: column;
+  padding: 24px 14px;
+  border-right: 1px solid rgba(255, 255, 255, 0.07);
+  background: #091522;
+}
+
+.asistir24-crm__sidebar-title {
+  padding: 0 13px 12px;
+  color: #60768d;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.15em;
+}
+
+.asistir24-crm__nav {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.asistir24-crm__nav-button {
+  width: 100%;
+  min-height: 45px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 0 13px;
+  border: 1px solid transparent;
+  border-radius: 9px;
+  background: transparent;
+  color: #91a6bb;
+  cursor: pointer;
+  font: inherit;
+  font-size: 13px;
+  font-weight: 600;
+  text-align: left;
+  transition:
+    background 0.18s ease,
+    color 0.18s ease,
+    border-color 0.18s ease,
+    transform 0.18s ease;
+}
+
+.asistir24-crm__nav-button:hover {
+  background: rgba(255, 255, 255, 0.04);
+  color: #e9f3fc;
+}
+
+.asistir24-crm__nav-button--active {
+  border-color: rgba(72, 168, 255, 0.16);
+  background: rgba(45, 132, 214, 0.14);
+  color: #ffffff;
+}
+
+.asistir24-crm__nav-button--active:hover {
+  background: rgba(45, 132, 214, 0.18);
+}
+
+.asistir24-crm__nav-icon {
+  width: 22px;
+  display: inline-flex;
+  justify-content: center;
+  color: #5aaeff;
+  font-size: 17px;
+}
+
+.asistir24-crm__reset {
+  margin-top: auto;
+  min-height: 40px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.025);
+  color: #71869a;
+  cursor: pointer;
+  font: inherit;
+  font-size: 11px;
+  font-weight: 600;
+  transition:
+    background 0.18s ease,
+    color 0.18s ease;
+}
+
+.asistir24-crm__reset:hover {
+  background: rgba(255, 255, 255, 0.06);
+  color: #b9c9d8;
+}
+
+/* =========================
+   MAIN
+   ========================= */
+
+.asistir24-crm__main {
+  min-width: 0;
+  min-height: 0;
+  flex: 1;
+  overflow: auto;
+  padding: 30px;
+  background:
+    radial-gradient(
+      circle at 90% 0%,
+      rgba(33, 107, 176, 0.12),
+      transparent 30%
+    ),
+    #07111f;
+}
+
+.asistir24-crm__heading {
+  min-height: 62px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 24px;
+}
+
+.asistir24-crm__heading h1 {
+  margin: 0;
+  color: #ffffff;
+  font-size: 26px;
+  line-height: 1.15;
+  font-weight: 750;
+  letter-spacing: -0.02em;
+}
+
+.asistir24-crm__heading p {
+  margin: 7px 0 0;
+  color: #70869b;
+  font-size: 13px;
+}
+
+/* =========================
+   ACTIONS
+   ========================= */
+
+.asistir24-crm__actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.asistir24-crm__search {
+  width: 210px;
+  height: 40px;
+  padding: 0 13px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  outline: none;
+  background: #0c1a2a;
+  color: #ffffff;
+  font: inherit;
+  font-size: 12px;
+  transition:
+    border-color 0.18s ease,
+    background 0.18s ease;
+}
+
+.asistir24-crm__search::placeholder {
+  color: #52687c;
+}
+
+.asistir24-crm__search:focus {
+  border-color: rgba(72, 168, 255, 0.5);
+  background: #0d1e30;
+}
+
+.asistir24-crm__primary-button {
+  height: 40px;
+  padding: 0 16px;
+  border: 1px solid rgba(72, 168, 255, 0.25);
+  border-radius: 8px;
+  background: #1687df;
+  color: #ffffff;
+  cursor: pointer;
+  font: inherit;
+  font-size: 12px;
+  font-weight: 700;
+  white-space: nowrap;
+  transition:
+    background 0.18s ease,
+    transform 0.18s ease,
+    box-shadow 0.18s ease;
+}
+
+.asistir24-crm__primary-button:hover {
+  background: #2499ef;
+  box-shadow: 0 7px 20px rgba(22, 135, 223, 0.22);
+  transform: translateY(-1px);
+}
+
+/* =========================
+   STAT CARDS
+   ========================= */
+
+.asistir24-crm__stats {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 14px;
+  margin-bottom: 18px;
+}
+
+.asistir24-crm__stat-card {
+  min-height: 128px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  border-radius: 12px;
+  background: #0b1929;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+}
+
+.asistir24-crm__stat-card span {
+  color: #7890a5;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.asistir24-crm__stat-card strong {
+  margin-top: 7px;
+  color: #ffffff;
+  font-size: 31px;
+  line-height: 1;
+  font-weight: 750;
+}
+
+.asistir24-crm__stat-card small {
+  margin-top: 9px;
+  color: #43c88b;
+  font-size: 11px;
+}
+
+/* =========================
+   DASHBOARD
+   ========================= */
+
+.asistir24-crm__dashboard-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(300px, 0.8fr);
+  gap: 18px;
+}
+
+/* =========================
+   PANELS
+   ========================= */
+
+.asistir24-crm__panel {
+  min-width: 0;
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  border-radius: 12px;
+  background: #0b1929;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+  overflow: hidden;
+}
+
+.asistir24-crm__panel-header {
+  min-height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  padding: 17px 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.asistir24-crm__panel-header h2 {
+  margin: 0;
+  color: #f4f8fc;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.asistir24-crm__panel-header p {
+  margin: 5px 0 0;
+  color: #657c91;
+  font-size: 11px;
+}
+
+/* =========================
+   QUICK LIST
+   ========================= */
+
+.asistir24-crm__quick-list {
+  padding: 4px 20px 10px;
+}
+
+.asistir24-crm__quick-list > div {
+  min-height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.asistir24-crm__quick-list > div:last-child {
+  border-bottom: 0;
+}
+
+.asistir24-crm__quick-list span {
+  color: #8da1b4;
+  font-size: 12px;
+}
+
+.asistir24-crm__quick-list strong {
+  color: #ffffff;
+  font-size: 17px;
+}
+
+/* =========================
+   MODULE CARDS
+   ========================= */
+
+.asistir24-crm__module-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+  padding: 18px;
+}
+
+.asistir24-crm__module-card {
+  min-height: 92px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 9px;
+  padding: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  border-radius: 9px;
+  background: #0e2032;
+  color: #ffffff;
+  cursor: pointer;
+  font: inherit;
+  text-align: left;
+  transition:
+    border-color 0.18s ease,
+    background 0.18s ease,
+    transform 0.18s ease;
+}
+
+.asistir24-crm__module-card:hover {
+  border-color: rgba(72, 168, 255, 0.28);
+  background: #10273c;
+  transform: translateY(-2px);
+}
+
+.asistir24-crm__module-card span {
+  color: #4eabff;
+  font-size: 20px;
+}
+
+.asistir24-crm__module-card strong {
+  font-size: 12px;
+  font-weight: 650;
+}
+
+/* =========================
+   TABLE
+   ========================= */
+
+.asistir24-crm__table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.asistir24-crm__table {
+  width: 100%;
+  min-width: 780px;
+  border-collapse: collapse;
+}
+
+.asistir24-crm__table th {
+  height: 46px;
+  padding: 0 18px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+  background: rgba(255, 255, 255, 0.015);
+  color: #61788d;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.07em;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.asistir24-crm__table td {
+  height: 60px;
+  padding: 0 18px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.045);
+  color: #b8c8d7;
+  font-size: 12px;
+  white-space: nowrap;
+}
+
+.asistir24-crm__table tbody tr {
+  transition: background 0.15s ease;
+}
+
+.asistir24-crm__table tbody tr:hover {
+  background: rgba(255, 255, 255, 0.025);
+}
+
+.asistir24-crm__table tbody tr:last-child td {
+  border-bottom: 0;
+}
+
+.asistir24-crm__table td:first-child {
+  color: #f0f5f9;
+  font-weight: 650;
+}
+
+/* =========================
+   BADGES
+   ========================= */
+
+.asistir24-crm__badge {
+  display: inline-flex;
+  align-items: center;
+  min-height: 25px;
+  padding: 0 9px;
+  border-radius: 999px;
+  font-size: 10px;
+  font-weight: 700;
+}
+
+.asistir24-crm__badge--success {
+  border: 1px solid rgba(53, 210, 138, 0.18);
+  background: rgba(53, 210, 138, 0.08);
+  color: #4fdda0;
+}
+
+.asistir24-crm__badge--muted {
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.035);
+  color: #71869a;
+}
+
+/* =========================
+   ROW ACTIONS
+   ========================= */
+
+.asistir24-crm__row-actions {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.asistir24-crm__row-actions button,
+.asistir24-crm__danger-button {
+  min-height: 30px;
+  padding: 0 9px;
+  border: 1px solid rgba(255, 255, 255, 0.09);
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.035);
+  color: #9eb2c4;
+  cursor: pointer;
+  font: inherit;
+  font-size: 10px;
+  font-weight: 650;
+  transition:
+    background 0.15s ease,
+    color 0.15s ease,
+    border-color 0.15s ease;
+}
+
+.asistir24-crm__row-actions button:hover {
+  border-color: rgba(72, 168, 255, 0.25);
+  background: rgba(72, 168, 255, 0.08);
+  color: #cfe7fa;
+}
+
+.asistir24-crm__row-actions .asistir24-crm__danger-button,
+.asistir24-crm__danger-button {
+  color: #c58383;
+}
+
+.asistir24-crm__row-actions .asistir24-crm__danger-button:hover,
+.asistir24-crm__danger-button:hover {
+  border-color: rgba(220, 85, 85, 0.25);
+  background: rgba(220, 85, 85, 0.08);
+  color: #efaaaa;
+}
+
+/* =========================
+   SELECT
+   ========================= */
+
+.asistir24-crm__select {
+  min-width: 112px;
+  height: 32px;
+  padding: 0 8px;
+  border: 1px solid rgba(255, 255, 255, 0.09);
+  border-radius: 6px;
+  outline: none;
+  background: #0d1e30;
+  color: #b8c8d7;
+  cursor: pointer;
+  font: inherit;
+  font-size: 10px;
+}
+
+.asistir24-crm__select:focus {
+  border-color: rgba(72, 168, 255, 0.4);
+}
+
+/* =========================
+   EMPTY
+   ========================= */
+
+.asistir24-crm__empty {
+  min-height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #5f7488;
+  font-size: 12px;
+}
+
+/* =========================
+   SCROLLBAR
+   ========================= */
+
+.asistir24-crm__main::-webkit-scrollbar,
+.asistir24-crm__table-wrapper::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+.asistir24-crm__main::-webkit-scrollbar-track,
+.asistir24-crm__table-wrapper::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.asistir24-crm__main::-webkit-scrollbar-thumb,
+.asistir24-crm__table-wrapper::-webkit-scrollbar-thumb {
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.11);
+}
+
+.asistir24-crm__main::-webkit-scrollbar-thumb:hover,
+.asistir24-crm__table-wrapper::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.18);
+}
+
+/* =========================
+   RESPONSIVE
+   ========================= */
+
+@media (max-width: 1100px) {
+  .asistir24-crm__stats {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .asistir24-crm__dashboard-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 800px) {
+  .asistir24-crm__sidebar {
+    width: 190px;
+    min-width: 190px;
+  }
+
+  .asistir24-crm__main {
+    padding: 20px;
+  }
+
+  .asistir24-crm__heading {
+    flex-direction: column;
+  }
+
+  .asistir24-crm__actions {
+    width: 100%;
+  }
+
+  .asistir24-crm__search {
+    flex: 1;
+  }
+}
+
+@media (max-width: 620px) {
+  .asistir24-crm__topbar {
+    padding: 0 16px;
+  }
+
+  .asistir24-crm__topbar-status {
+    display: none;
+  }
+
+  .asistir24-crm__sidebar {
+    width: 68px;
+    min-width: 68px;
+    padding: 18px 8px;
+  }
+
+  .asistir24-crm__sidebar-title,
+  .asistir24-crm__nav-button span:last-child,
+  .asistir24-crm__reset {
+    display: none;
+  }
+
+  .asistir24-crm__nav-button {
+    justify-content: center;
+    padding: 0;
+  }
+
+  .asistir24-crm__nav-icon {
+    width: auto;
+  }
+
+  .asistir24-crm__stats {
+    grid-template-columns: 1fr;
+  }
+
+  .asistir24-crm__module-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .asistir24-crm__actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .asistir24-crm__search {
+    width: 100%;
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "version": "1.0",
+  "moneda": "ARS",
+  "franjas_horarias": {
+    "diurna": {
+      "id": "TARIFA_DIURNA",
+      "desde": "08:00",
+      "hasta": "15:00",
+      "movida": 45999,
+      "valor_km": 1245
+    },
+    "nocturna": {
+      "id": "TARIFA_NOCTURNA",
+      "desde": "15:00",
+      "hasta": "08:00",
+      "movida": 49000,
+      "valor_km": 1450
+    }
+  },
+  "adicionales": {
+    "fin_de_semana": {
+      "porcentaje": 15
+    },
+    "feriado": {
+      "porcentaje": 15
+    }
+  }
+}
